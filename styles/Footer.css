@@ -1,0 +1,87 @@
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 2.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
+.footer__lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  max-width: 800px;
+}
+
+.footer__list-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.footer__heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.footer__item {
+  line-height: 1.5;
+}
+
+.contact__heading {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.contact__mail {
+  font-family: "GT America Standard - Regular";
+}
+
+.footer__copyright {
+  display: flex;
+}
+
+.footer__copyright-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+}
+
+.abstract-logo-footer {
+  width: 150px;
+}
+
+.copyright__text {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 620px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__copyright {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 2.8rem 4rem;
+  }
+
+  .footer__copyright {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__lists {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
