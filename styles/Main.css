@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+  background-color: var(--light-purple);
+  row-gap: 50px;
+  padding: 90px 1rem;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.hero__heading {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.search-form--hero {
+  justify-content: center;
+}
+
+.search-form__input--hero {
+  width: 100%;
+  padding: 1.2rem 0.8rem !important;
+  box-shadow: 0px 10px 20px #0002;
+}
+
+.search-form__input--hero:focus,
+.search-form__input--hero:hover {
+  border: 1px solid var(--purple);
+}
+
+.arrow-svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  bottom: 10px;
+  right: 1rem;
+}
+
+.search-form--hero:has(
+    :is(.search-form__input--hero:focus, .search-form__input--hero:hover)
+  )
+  ~ .arrow-svg,
+.arrow-svg:hover {
+  fill: var(--purple);
+}
+
+@media screen and (min-width: 520px) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 5rem;
+  }
+
+  .search-form__input--hero {
+    width: 90%;
+  }
+
+  .arrow-svg {
+    right: 6%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    row-gap: 30px;
+  }
+
+  .search-form__input--hero {
+    width: 55%;
+  }
+
+  .arrow-svg {
+    right: 24%;
+  }
+}

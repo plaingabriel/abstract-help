@@ -1,6 +1,7 @@
 /* GLOBAL CSS */
 
 @import url("./styles/Header.css");
+@import url("./styles/Main.css");
 
 * {
   margin: 0;
@@ -23,6 +24,11 @@
 @font-face {
   font-family: "GT America Standard - Regular";
   src: url("./GT-America-Standard/GT-America-Standard-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: "GT America Standard - Medium";
+  src: url("./GT-America-Standard/GT-America-Standard-Medium-Trial.otf");
 }
 
 /** END FONTS **/
